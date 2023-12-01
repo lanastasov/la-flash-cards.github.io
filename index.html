@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flash-cards</title>
+    <style>
+        .flashcard-container:hover .flashcard {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-container,
+        .question,
+        .answer {
+            width: 200px;
+            height: 200px;
+        }
+
+        .flashcard {
+            align-items: center;
+            transition: 0.5s;
+            transform-style: preserve-3d;
+        }
+
+        .question {
+            z-index: 5;
+        }
+
+        .answer {
+            transform: rotateY(180deg);
+        }
+
+        .question,
+        .answer {
+            backface-visibility: hidden;
+            border: 1px solid #aaa;
+            border-radius: 10px 10px;
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            font-size: 22px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rows {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rows">
+        <div id="row1">
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vigor
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            n. active physical or mental force or strength; vitality; жизненост, енергичност
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            dispel
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to scatter and drive away; прогонвам, пропъждам
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vindicate
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to clear from charges; оправдавам
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row2">
+
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vigor
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            n. active physical or mental force or strength; vitality; жизненост, енергичност
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            dispel
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to scatter and drive away; прогонвам, пропъждам
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vindicate
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to clear from charges; оправдавам
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row3">
+
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vigor
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            n. active physical or mental force or strength; vitality; жизненост, енергичност
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            dispel
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to scatter and drive away; прогонвам, пропъждам
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vindicate
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to clear from charges; оправдавам
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row4">
+
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vigor
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            n. active physical or mental force or strength; vitality; жизненост, енергичност
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            dispel
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to scatter and drive away; прогонвам, пропъждам
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vindicate
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to clear from charges; оправдавам
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row5">
+
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vigor
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            n. active physical or mental force or strength; vitality; жизненост, енергичност
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            dispel
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to scatter and drive away; прогонвам, пропъждам
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vindicate
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to clear from charges; оправдавам
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row6">
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vigor
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            n. active physical or mental force or strength; vitality; жизненост, енергичност
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            dispel
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to scatter and drive away; прогонвам, пропъждам
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vindicate
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to clear from charges; оправдавам
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row7">
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vigor
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            n. active physical or mental force or strength; vitality; жизненост, енергичност
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            dispel
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to scatter and drive away; прогонвам, пропъждам
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vindicate
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to clear from charges; оправдавам
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row8">
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vigor
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            n. active physical or mental force or strength; vitality; жизненост, енергичност
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            dispel
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to scatter and drive away; прогонвам, пропъждам
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vindicate
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to clear from charges; оправдавам
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row9">
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vigor
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            n. active physical or mental force or strength; vitality; жизненост, енергичност
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            dispel
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to scatter and drive away; прогонвам, пропъждам
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vindicate
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to clear from charges; оправдавам
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row10">
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vigor
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            n. active physical or mental force or strength; vitality; жизненост, енергичност
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            dispel
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to scatter and drive away; прогонвам, пропъждам
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            vindicate
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            v. to clear from charges; оправдавам
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="question">
+                        <div class="content">
+                            innocuous
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="content">
+                            безвреден
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
